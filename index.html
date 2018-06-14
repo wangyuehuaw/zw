@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <style type="text/css">
+    	
+    </style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="user-login">
+			<input type="text" name="username">
+			<input type="text" name="password">
+			<input type="checkbox" name="rememberpw"><br>
+			<button>登录</button>
+			<button class="remove">移除缓存</button>
+			<button class="class">清空缓存</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/storage.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			STORAGEJS.init();
+		}
+	</script>
+</body>
+
+</html>
